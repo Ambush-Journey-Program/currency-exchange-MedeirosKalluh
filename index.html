@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet/reset.css">
     <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <script src="index.js" defer></script>
     <title>Currency Exchange</title>
 </head>
@@ -16,13 +19,15 @@
             USD
             </h1>
             <div class="currency__usd"> 
-                <p class="text">Amount</p> <span id="value-usd">0</span>
+                <p class="currency__text">Amount</p>
+                <input type="text" class="currency__input" id="value-usd" placeholder="0,00" required>
             </div>
         </div>
-        <button class="converter"></button>
+        <button class="currency__converter"></button>
         <div class="currency">
             <div class="currency__brl"> 
-                <p class="text">Amount</p> <span id="value-brl">0</span>
+                <p class="currency__text">Amount</p> 
+                <input type="text" class="currency__input" id="value-brl" placeholder="0,00" required>            
             </div>
             <h1 class="currency__title">
             BRL
