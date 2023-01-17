@@ -1,0 +1,80 @@
+html {
+    background: no-repeat linear-gradient(180deg, #382547 0%, #68415E 100%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', 'calibri', 'arial', sans-serif;
+    font-weight: 700;
+    background: no-repeat;
+    background-position: bottom right;
+    background-image: url(../images/CurrencyCircleDollar.svg);
+    background-size: 32rem;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency {
+    margin-bottom: 3rem;
+}
+
+.currency__title {
+    font-size: 54px;
+    margin: 1.5rem;
+}
+
+.currency__input,
+.currency__text {
+    font-size: 32px;
+    border: none;
+    margin: auto;
+}
+
+.currency__input {
+    width: 6rem;
+    margin-left: 16rem;
+    background: none;
+}
+
+.currency__input,
+.currency__input::placeholder {
+    text-align: right;
+    font-family: 'Poppins', 'calibri', 'arial', sans-serif;
+    font-weight: 700;
+    color: white;
+    opacity: 1; 
+}
+
+.currency__usd,
+.currency__brl {
+    display: flex;
+    justify-items: center;
+    padding: 2.3rem 1.5rem;
+    background: #5A5092;
+    box-shadow: 3px 7px 7px 2px rgba(146, 134, 213, 0.6);
+    border-radius: 12px;
+}
+
+.currency__brl + .currency__title {
+   text-align: end;
+}
+
+.switch-button {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 3rem;
+    background-repeat: no-repeat;
+    background-image: url(../images/Ellipse\ 1.svg);
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
