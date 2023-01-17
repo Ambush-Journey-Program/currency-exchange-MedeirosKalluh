@@ -2,6 +2,18 @@ html {
     background: no-repeat linear-gradient(180deg, #382547 0%, #68415E 100%);
 }
 
+:root {
+    --margin-input: 16rem;
+    --background-size: 32rem;
+}
+
+@media (max-width: 570px) {
+    :root {
+        --margin-input: 4rem;
+        --background-size: 15rem;
+    }
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -9,13 +21,16 @@ body {
     font-weight: 700;
     background: no-repeat;
     background-position: bottom right;
+    transition: .2s;
+    padding: 1.5rem;
     background-image: url(../images/CurrencyCircleDollar.svg);
-    background-size: 32rem;
+    background-size: var(--background-size);
     height: 100vh;
     color: white;
 }
 
 .container {
+    max-width: 33rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,14 +48,14 @@ body {
 
 .currency__input,
 .currency__text {
-    font-size: 32px;
+    font-size: 2rem;
     border: none;
     margin: auto;
 }
 
 .currency__input {
     width: 6rem;
-    margin-left: 16rem;
+    margin-left: var(--margin-input);
     background: none;
 }
 
@@ -57,7 +72,7 @@ body {
 .currency__brl {
     display: flex;
     justify-items: center;
-    padding: 2.3rem 1.5rem;
+    padding: 1.5rem;
     background: #5A5092;
     box-shadow: 3px 7px 7px 2px rgba(146, 134, 213, 0.6);
     border-radius: 12px;
@@ -77,4 +92,3 @@ body {
     border-radius: 5rem;
     cursor: pointer;
 }
-
