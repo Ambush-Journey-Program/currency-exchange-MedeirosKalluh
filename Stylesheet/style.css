@@ -3,13 +3,13 @@ html {
 }
 
 :root {
-    --margin-input: 16rem;
+    --margin-input: 22rem;
     --background-size: 32rem;
 }
 
 @media (max-width: 570px) {
     :root {
-        --margin-input: 4rem;
+        --margin-input: 10rem;
         --background-size: 15rem;
     }
 }
@@ -54,8 +54,7 @@ body {
 }
 
 .currency__input {
-    width: 6rem;
-    margin-left: var(--margin-input);
+    width: var(--margin-input);
     background: none;
 }
 
