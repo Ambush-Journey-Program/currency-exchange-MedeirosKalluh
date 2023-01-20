@@ -58,6 +58,16 @@ body {
     background: none;
 }
 
+.currency__input::-webkit-outer-spin-button,
+.currency__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
 .currency__input,
 .currency__input::placeholder {
     text-align: right;
