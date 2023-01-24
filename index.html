@@ -13,7 +13,7 @@
     <title>Currency Exchange</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="currency">
             <h1 class="currency__title">
             USD
@@ -23,11 +23,11 @@
                 <input type="number" class="currency__input" id="value-usd" placeholder="0,00" onfocus="this.value=''" required>
             </div>
         </div>
-        <button class="switch-button"></button>
+        <button class="switch-button" id="switch-button"></button>
         <div class="currency">
             <div class="currency__brl"> 
                 <p class="currency__text">Amount</p> 
-                <input type="number" class="currency__input" id="value-brl" placeholder="0,00" onfocus="this.value=''" required>            
+                <input type="number" class="currency__input" id="value-brl" placeholder="0,00" onfocus="this.value=''" disabled required>            
             </div>
             <h1 class="currency__title">
             BRL
