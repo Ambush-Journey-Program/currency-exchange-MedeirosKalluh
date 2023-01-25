@@ -13,21 +13,22 @@ brlValue.addEventListener("input", function exchangeInUSD(event){
     usdValue.value = calcConvertion
 })
 
+const currencyWrapperEl = document.querySelectorAll(".currency")
 
-// 1. Inicia com o input de baixo desabilitado (<input disabled>)
-// 2. input de cima fica habilitado (<input />)
+
+
+
 const currencyContainer = document.querySelector("#container")
 const button = document.getElementById("switch-button")
 button.addEventListener("click", function switchCurrency(event){
-// 3. Quando clicar no botao de switch, adicionar a variante para aplicar o flex-direction: column-reverse
-    currencyContainer.setAttribute("style", "flex-direction:column-reverse")
-
-    // 1. faz a query de todos querySelectAll()
+    currencyContainer.classList.toggle("container--reverse")
+    currencyWrapperEl.forEach(function(element){
+        element.classList.toggle("currency--reverse")
+    })
+        
     const inputs = document.querySelectorAll(".currency__input")
-    // 2. Separa em 2 variaveis, um para cada
     const usdInput = inputs[0]
     const brlInput = inputs [1]
-//3.1 Chamar a funcao para desabilitar o input de BRL e habilitar o input USD
     if (brlInput.disabled) {
         brlInput.removeAttribute("disabled", "");;
       } else {

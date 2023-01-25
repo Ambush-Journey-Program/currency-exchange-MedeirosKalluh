@@ -21,7 +21,7 @@ body {
     font-weight: 700;
     background: no-repeat;
     background-position: bottom right;
-    transition: .2s;
+    transition: .6s;
     padding: 1.5rem;
     background-image: url(../images/CurrencyCircleDollar.svg);
     background-size: var(--background-size);
@@ -35,10 +35,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+
+.container--reverse {
+    flex-direction: column-reverse;
 }
 
 .currency {
     margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.currency--reverse {
+    text-align: end;
+    flex-direction: column-reverse;
+
 }
 
 .currency__title {
@@ -77,8 +90,7 @@ input[type=number]{
     opacity: 1; 
 }
 
-.currency__usd,
-.currency__brl {
+.currency__box {
     display: flex;
     justify-items: center;
     padding: 1.5rem;
@@ -87,9 +99,6 @@ input[type=number]{
     border-radius: 12px;
 }
 
-.currency__brl + .currency__title {
-   text-align: end;
-}
 
 .switch-button {
     width: 5rem;
@@ -100,4 +109,5 @@ input[type=number]{
     border: none;
     border-radius: 5rem;
     cursor: pointer;
+
 }
