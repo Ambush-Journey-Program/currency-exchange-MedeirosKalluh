@@ -1,23 +1,22 @@
+//Currency Exchange
 const usdValue = document.getElementById("value-usd") 
 const brlValue = document.getElementById("value-brl")
 
 usdValue.addEventListener("input", function exchangeInBRL(event){
     const brValueAsNumber = Number(event.target.value)
-    const calcConvertion = (brValueAsNumber * 5.17).toFixed(2)
+    const calcConvertion = (brValueAsNumber * 5.08).toFixed(2)
     brlValue.value = calcConvertion
 })
 
 brlValue.addEventListener("input", function exchangeInUSD(event){
     const usdValueAsNumber = Number(event.target.value)
-    const calcConvertion = (usdValueAsNumber / 5.17).toFixed(2)
+    const calcConvertion = (usdValueAsNumber / 5.08).toFixed(2)
     usdValue.value = calcConvertion
 })
 
 const currencyWrapperEl = document.querySelectorAll(".currency")
 
-
-
-
+//Switch Button
 const currencyContainer = document.querySelector("#container")
 const button = document.getElementById("switch-button")
 button.addEventListener("click", function switchCurrency(event){
